@@ -1,0 +1,21 @@
+<template>
+    <img class="loading-container" :src="loadingUrl">
+</template>
+
+<script>
+import loadingUrl from '@/assets/loading.svg'
+export default {
+    data() {
+        return {
+            loadingUrl
+        };
+    }
+}
+</script>
+
+<style lang="less" scoped>
+@import '~@/styles/mix.less';
+.loading-container {
+    .self-center();
+}
+</style>
